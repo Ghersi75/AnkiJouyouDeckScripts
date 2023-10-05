@@ -1,5 +1,5 @@
 import json
+from utils import loadJson
 
-f = open("_grade1Sentences.json")
-sentences = json.load(f)
-f.close()
+if __name__ == "__main__":
+  grade1Sentences = loadJson("./_grade1Sentences.json")

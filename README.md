@@ -15,3 +15,5 @@ The goal of this project is to create an anki deck with all jouyou kanji, meanin
   - [Tatoeba API](https://en.wiki.tatoeba.org/articles/show/api#api): This will likely end up being used for example sentences. A discord user from a large english-japanese exchange server did mention that tatoeba may not be the most accurate, so I will try my best to be careful. Unfortunately I don't have the comprehension level nor the time to look through what will likely be thousands of sentences, so I'll try to add some sort of feedback system at some point later down the line. Or I'll just release it and let people change sentences as they see fit within their own Anki application.
 
 This is still a WIP. Once everything is finalized, anki deck links and additional info will be added here.
+
+[国会|こっ|かい]は[開会|かい|かい][中|ちゅう]

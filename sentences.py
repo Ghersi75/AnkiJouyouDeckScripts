@@ -1,8 +1,10 @@
+from genericpath import isfile
 import json
 import asyncio
 from kanjiApi import asyncRequests
 from os import system
-from utils import loadJson, saveJson
+import sys
+from utils import createFile, loadJson, saveJson
 import urllib.parse
 
 jouyouJson = loadJson("./_jouyou.json")
@@ -147,6 +149,13 @@ def GetSentencesByKanjiList(kanjiList):
 
   saveJson("_jouyouSentenceData.json", sentencesByGrade)
 
+def GenerateKanjiFieldsByGrade(grade):
+  path = f"_grade{grade}sentences.json"
+  if not isfile(path):
+    return
+
+
 if __name__ == "__main__":
   system("clear")
-  GetSentencesByKanjiList(getKanjiByFrequency(4, 4).values())
+  # GetSentencesByKanjiList(getKanjiByFrequency(4, 4).values())
+  GetSentencesByJouyouGrade(1)

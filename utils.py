@@ -1,4 +1,5 @@
 import json
+import os
 
 def loadJson(filename):
   f = open(filename, "r")
@@ -11,3 +12,10 @@ def saveJson(filename, data):
   formattedData = json.dumps(data)
   f.write(formattedData)
   f.close()
+
+def createFile(filename):
+  f = open(filename, "w+")
+  return f
+
+def fileExists(filename):
+  return os.path.isfile(filename)

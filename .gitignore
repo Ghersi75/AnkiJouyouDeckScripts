@@ -2,6 +2,6 @@
 
 __pycache__/
 
-_*.json
-*.txt
+.json
+.txt
 *.mp3
